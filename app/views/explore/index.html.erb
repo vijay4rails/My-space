@@ -1,0 +1,18 @@
+<h1>Details page</h1>
+
+<table border = "1" width = "50" cellpadding="5 cellspacing="5">
+	<tr>
+		<th>Firstname</th>
+		<th>Lastname</th>
+		<th>City</th>
+		<th>Pincode</th>
+	</tr>
+	<% @explore_obj.each do |i| %>
+	<tr>
+		<td> <%= i.firstname %></td>
+		<td> <%= i.lastname %></td>
+		<td> <%= i.city %></td>
+		<td> <%= i.pincode %></td>
+	</tr>
+	<% end %>
+</table>

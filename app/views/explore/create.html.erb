@@ -1,0 +1,8 @@
+<h1>Explore#create</h1>
+<%= form_for @exp_obj, url: { action: "show" } do |f| %>
+Firstname: <%= f.text_field  :firstname %><br \><br \>
+Lastname: <%= f.text_field  :lastname %><br \><br \>
+City: <%= f.select :city, ['Please select your city','Hyderabad','Odisa','Vijayawada'] %><br \><br \>
+Pincode: <%= f.number_field  :pincode %><br \><br \>
+<%= f.submit %>
+<% end %>

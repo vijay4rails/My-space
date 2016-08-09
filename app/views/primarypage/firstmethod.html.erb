@@ -1,0 +1,8 @@
+<h1>Welcome to primary page</h1>
+<%= form_tag do %>
+Name: <%= text_field_tag'name' %> </br></br>
+Lastname: <%= text_field_tag'lastname' %> </br></br>
+<%= submit_tag %>
+<% end %>
+Name : <%= @name %>
+lastname : <%= @lastname %>

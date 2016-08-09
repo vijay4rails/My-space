@@ -1,0 +1,8 @@
+<h1>Primarypage#secondmethod</h1>
+<%= form_tag do %>
+Address: <%= text_field_tag'address' %> </br></br>
+Contact: <%= telephone_field_tag'number' %> </br></br>
+<%= submit_tag %>
+<% end %>
+Add: <%= @address %>
+Number: <%= @number %>

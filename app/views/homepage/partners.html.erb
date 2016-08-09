@@ -1,0 +1,6 @@
+<h1>Welocome to Homepage</h1>
+<%= form_tag homepage_aboutus_path do %>
+Awards : <%= text_area_tag 'list' %> <br />
+Companymail : <%= email_field_tag 'email' %> <br />
+<%= submit_tag %>
+<% end %>
